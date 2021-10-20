@@ -1,0 +1,26 @@
+section.edit-events
+	.events__top
+		.container.px-lg-100
+			.events__top-box.align-items-center.d-flex.flex-column.flex-md-row.py-20
+				h1.events__title Редактировать событие Automechanika 2021
+	.edit-events__content.py-50
+		.container.px-1.px-md-3.px-lg-100
+			form.edit-events__form(action="#" method="POST")
+				.row.g-30
+					.col-12.col-md-6
+						label.edit-events__label.form-label(for="eventName") Название события
+						input.edit-events__input.form-control(type="text" id="eventName" placeholder="Укажите название события" value="Automechanika 2021")
+					.col-12.col-md-6
+						label.edit-events__label.form-label(for="eventDate") Дата начала события
+						input.edit-events__input.form-control(type="date" id="eventDate" value="2021-07-10")
+					.col-12.col-md-6
+						label.edit-events__label.form-label(for="eventCity") Город проведения
+						input.edit-events__input.form-control(type="text" id="eventCity" placeholder="Укажите город проведения события" value="Frankfurt am Main")
+					.col-12.col-md-6
+						label.edit-events__label.form-label(for="eventDuration") Продолжительность (дней)
+						input.edit-events__input.form-control(type="text" id="eventDuration" placeholder="Укажите продолжительность события" value="5")
+					.col-12
+						label.edit-events__label.form-label(for="eventComment") Комментарий к событию
+						textarea.edit-events__input.form-control(id="eventComment" value="Здесь находится какой то текст и он может быть разной длины" placeholder="Напишите комментарий")
+					.col-12
+						a(href='#').events__button Сохранить

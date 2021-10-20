@@ -1,0 +1,9 @@
+extends layout/main
+
+block variables
+	-var title = 'Главная страница'
+	-var pageClass = 'events'
+
+block content
+	main(class=pageClass)
+		include pages/events/event

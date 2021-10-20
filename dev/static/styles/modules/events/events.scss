@@ -1,0 +1,129 @@
+.events {
+  &__top {
+    background-color: $white;
+    box-shadow: 0 4px 7px 0 rgba(34, 60, 80, .2);
+  }
+  &__title {
+    font-size: 26px;
+    font-weight: 600;
+    @media screen and (max-width: $mobile-size) {
+      font-size: 22px;
+    }
+  }
+  &__button {
+    background-color: $red-color;
+    border: none;
+    border-radius: 5px;
+    color: $white;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+  }
+  &__item {
+    background-color: $white;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    @media screen and (max-width: $mobile-size) {
+      padding: 10px;
+    }
+    &:not(:last-child) {
+      margin: 0 0 40px 0;
+      @media screen and (max-width: $mobile-size) {
+        margin: 0 0 20px 0;
+      }
+    }
+  }
+  &__name {
+    font-weight: 600;
+    @media screen and (max-width: $mobile-size) {
+      font-size: 14px;
+    }
+  }
+  &__place {
+    line-height: 1.5;
+  }
+  &__date {
+    @media screen and (max-width: $mobile-size) {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+  &__days {
+    @media screen and (max-width: $mobile-size) {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+  &__link {
+    color: $red-color;
+    font-weight: 600;
+    text-decoration: none;
+    @media screen and (max-width: $mobile-size) {
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
+  &__leeds-text {
+    color: $black;
+    @media screen and (max-width: $mobile-size) {
+      font-size: 14px;
+    }
+  }
+  &__leeds-count {
+    border-radius: 5px;
+    color: $black;
+    font-weight: 600;
+    padding: 10px;
+    text-decoration: none;
+    @media screen and (max-width: $mobile-size) {
+      font-size: 14px;
+      margin: 0 0 20px 0;
+      padding: 0;
+    }
+  }
+  &__add-leeds {
+    background-color: $red-color;
+    border: none;
+    border-radius: 5px;
+    color: $white;
+    padding: 10px 15px;
+    text-decoration: none;
+    @media screen and (max-width: $tablet-size) {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  &__company {
+    font-weight: 600;
+    @media screen and (max-width: $mobile-size) {
+      font-size: 14px;
+    }
+  }
+  &__details {
+    color: #74bbfc;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  &__leed-more {
+    width: 100%;
+    @media screen and (max-width: $mobile-size) {
+      background-color: $white;
+      box-shadow: 0 15px 50px rgba(80, 134, 224, .2);
+      border-radius: 15px;
+      bottom: 10px;
+      opacity: 0;
+      padding: 20px 20px;
+      position: absolute;
+      pointer-events: none;
+      transition: all ease-out .35s;
+      right: 45px;
+      width: 200px;
+      z-index: 50;
+      &._active {
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+  }
+}

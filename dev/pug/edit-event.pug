@@ -1,0 +1,9 @@
+extends layout/main
+
+block variables
+	-var title = 'Редактировать событие'
+	-var pageClass = 'edit-events'
+
+block content
+	main(class=pageClass)
+		include pages/edit-event/edit-event

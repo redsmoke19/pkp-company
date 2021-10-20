@@ -1,0 +1,9 @@
+extends layout/main
+
+block variables
+	-var title = 'Список лидов'
+	-var pageClass = 'leed-list'
+
+block content
+	main(class=pageClass)
+		include pages/leed-list/leed-list

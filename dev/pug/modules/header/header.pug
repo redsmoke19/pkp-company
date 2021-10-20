@@ -1,0 +1,27 @@
+header.header
+	.container.px-lg-100
+		.header__content
+			.sandwich
+				.sandwich__line.sandwich__line--top
+				.sandwich__line.sandwich__line--middle
+				.sandwich__line.sandwich__line--bottom
+			a.header__logo.me-md-50(href='index.html')
+				+icon('icon-logo', 'header__logo-icon', '150', '50')
+			ul.header__list
+				li.header__item
+					a.header__link(class=pageClass==='events' ? 'header__link--active': '' href='index.html') Список событий
+				li.header__item
+					a.header__link(class=pageClass==='leeds-list' ? 'header__link--active': '' href='leed-list.html') Список лидов
+			.header__users.users
+				button.users__button(id='dropdownUsersMenu' data-bs-toggle='dropdown' aria-expanded='false')
+					span.users__name Super Administrator
+					+icon('icon-arrow', 'users__icon', '15', '15')
+				ul.users__menu.dropdown-menu(aria-labelledby='dropdownUsersMenu')
+					li.users__item
+						a.users__link(href='#')
+							+icon('icon-user', 'users__link-icon', '20', '20')
+							span.users__link-name Товарищ Мамура
+					li.users__item
+						a.users__link(href='#')
+							+icon('icon-exit', 'users__link-icon', '20', '20')
+							span.users__link-name Выход

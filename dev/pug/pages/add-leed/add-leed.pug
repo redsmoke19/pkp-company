@@ -1,0 +1,29 @@
+section.add-leed
+	.events__top
+		.container.px-lg-100
+			.events__top-box.align-items-center.d-flex.flex-column.flex-md-row.py-20
+				h1.events__title Добавить лида
+	.edit-events__content.py-50
+		.container.px-1.px-md-3.px-lg-100
+			form.edit-events__form(action="#" method="POST")
+				.row.g-30
+					.col-12
+						label.edit-events__label.form-label(for="leedFIO") ФИО
+						input.edit-events__input.form-control(type="text" id="leedFIO" placeholder="Укажите ФИО лида")
+					.col-12.col-md-6
+						label.edit-events__label.form-label(for="leedPhone") Телефон
+						input.edit-events__input.form-control(type="tel" id="leedPhone" placeholder="Укажите контактный телефон")
+					.col-12.col-md-6
+						label.edit-events__label.form-label(for="leedEmail") Почта
+						input.edit-events__input.form-control(type="email" id="leedEmail" placeholder="Укажите адрес электронной почты")
+					.col-12.col-md-6
+						label.edit-events__label.form-label(for="leedCompany") Компания
+						input.edit-events__input.form-control(type="text" id="leedCompany" placeholder="Укажите компанию")
+					.col-12.col-md-6
+						label.edit-events__label.form-label(for="leedSite") Сайт
+						input.edit-events__input.form-control(type="text" id="leedSite" placeholder="Укажите сайт")
+					.col-12
+						label.edit-events__label.form-label(for="leedComment") Комментарий
+						textarea.edit-events__input.form-control(id="leedComment" value="Здесь находится какой то текст и он может быть разной длины" placeholder="Напишите комментарий")
+					.col-12
+						a(href='#').events__button Сохранить
